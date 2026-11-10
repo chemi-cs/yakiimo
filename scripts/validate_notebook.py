@@ -45,7 +45,7 @@ def main():
             if a.source != b.source:
                 changed.append(index)
         assert changed == manifest["adapted_cell_indexes_zero_based"], changed
-        print("PASS: source parity; only the three documented environment adaptations differ.")
+        print(f"PASS: source parity; only the {len(changed)} documented environment adaptations differ.")
     print("PASS: schema, all 45 code cells compile, native kernel, assets, and checksums.")
 
     if args.execute:

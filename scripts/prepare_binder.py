@@ -61,6 +61,16 @@ def main():
         "# 最初に1回だけ実行する準備セル\n"
         "# Binderでは必要なライブラリをあらかじめインストールしています。\n" + imports
     ).splitlines(keepends=True)
+    svg_display = "    display(SVG(svg))"
+    if text(cells[88]).count(svg_display) != 1:
+        raise SystemExit("Source SVG display changed. Review the conversion first.")
+    cells[88]["source"] = text(cells[88]).replace(
+        svg_display,
+        "    # 通常のJupyterではSVGオブジェクトを返す場合があります。\n"
+        "    if isinstance(svg, SVG):\n"
+        "        svg = svg.data\n"
+        + svg_display
+    ).splitlines(keepends=True)
     hardware_note = "**JupyterLiteでは実行しません。**"
     if hardware_note not in text(cells[91]):
         raise SystemExit("Source hardware warning changed. Review the conversion first.")
@@ -101,10 +111,11 @@ def main():
         "binder_notebook_sha256": hashlib.sha256(output).hexdigest(),
         "cell_count": len(cells),
         "code_cell_count": 45,
-        "adapted_cell_indexes_zero_based": [86, 87, 91],
+        "adapted_cell_indexes_zero_based": [86, 87, 88, 91],
         "adaptations": [
             "Replace the JupyterLite-only environment note with Binder instructions.",
             "Remove the WebAssembly installer; import preinstalled native packages.",
+            "Normalize RDKit SVG objects to SVG text for native IPython compatibility.",
             "Keep the Pico hardware code as read-only teaching material in both environments.",
             "Use the python3 kernelspec, native environment metadata, and cleared outputs."
         ],

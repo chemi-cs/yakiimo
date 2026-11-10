@@ -21,7 +21,7 @@
 - 同期元：[chemi-cs/yakiimo-lite の公開版](https://github.com/chemi-cs/yakiimo-lite/blob/2e7c630615f400452cf310a8015c7e99609affdd/content/yakiimo_python_junior.ipynb)
 - 同期元コミット：`2e7c630615f400452cf310a8015c7e99609affdd`
 - 教材は94セル、うち実行するコードは45セルです。導入デモ、練習1〜8、ヒント・解答、グラフ、分子表示、温度制御の説明を含みます。
-- Binder用に変えた本文は、実行環境の説明、ライブラリの準備セル、実機用コードを実行しない旨の注意だけです。演習・例題・分子の計算は公開版を引き継いでいます。
+- Binder用の変更は、実行環境の説明、ライブラリの準備セル、SVG表示の互換処理、実機用コードを実行しない旨の注意です。演習・例題・分子の計算は公開版を引き継いでいます。
 - JupyterLiteではPyodide上で動きますが、Binderではサーバー上のPython 3.12と通常のRDKit 2026.3.6を使います。WebAssembly用wheelは使用しません。
 - 画像 `1.2.png` と構造データ `5wqs.pdb` は、公開版と同一です。
 - 出典のコミット、ファイルのハッシュ、変換箇所は `BINDER_SOURCE.json` に記録しています。

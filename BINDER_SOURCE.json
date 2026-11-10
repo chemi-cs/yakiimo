@@ -4,17 +4,19 @@
   "source_notebook_path": "content/yakiimo_python_junior.ipynb",
   "source_notebook_sha256": "70a5e2554295942e43fc344db8d5c64e36ab852ffb8c821ce0634a1f4074bd8f",
   "binder_notebook": "yakiimo_python_junior.ipynb",
-  "binder_notebook_sha256": "e1857ca1381173753ab30803f76519e0439a6e205bfb8809f53a30c86b261e14",
+  "binder_notebook_sha256": "0ebe20e27e096b948d810d3dc28e7794b7c8ea37d9c9df789fcf081740a399eb",
   "cell_count": 94,
   "code_cell_count": 45,
   "adapted_cell_indexes_zero_based": [
     86,
     87,
+    88,
     91
   ],
   "adaptations": [
     "Replace the JupyterLite-only environment note with Binder instructions.",
     "Remove the WebAssembly installer; import preinstalled native packages.",
+    "Normalize RDKit SVG objects to SVG text for native IPython compatibility.",
     "Keep the Pico hardware code as read-only teaching material in both environments.",
     "Use the python3 kernelspec, native environment metadata, and cleared outputs."
   ],
