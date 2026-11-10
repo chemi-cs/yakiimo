@@ -1,0 +1,11 @@
+# Native Python packages for the Binder backup, not WebAssembly wheels.
+numpy==2.3.5
+matplotlib==3.10.8
+rdkit==2026.3.6
+py3Dmol==2.5.2
+# Preserve packages available in the original Binder teaching environment.
+seaborn==0.13.2
+scikit-learn==1.7.1
+# Used to validate every executable lesson cell during the image build.
+nbformat==5.10.4
+nbclient==0.10.2

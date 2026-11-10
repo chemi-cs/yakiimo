@@ -1,0 +1,25 @@
+{
+  "source_repository": "https://github.com/chemi-cs/yakiimo-lite",
+  "source_commit": "2e7c630615f400452cf310a8015c7e99609affdd",
+  "source_notebook_path": "content/yakiimo_python_junior.ipynb",
+  "source_notebook_sha256": "70a5e2554295942e43fc344db8d5c64e36ab852ffb8c821ce0634a1f4074bd8f",
+  "binder_notebook": "yakiimo_python_junior.ipynb",
+  "binder_notebook_sha256": "e1857ca1381173753ab30803f76519e0439a6e205bfb8809f53a30c86b261e14",
+  "cell_count": 94,
+  "code_cell_count": 45,
+  "adapted_cell_indexes_zero_based": [
+    86,
+    87,
+    91
+  ],
+  "adaptations": [
+    "Replace the JupyterLite-only environment note with Binder instructions.",
+    "Remove the WebAssembly installer; import preinstalled native packages.",
+    "Keep the Pico hardware code as read-only teaching material in both environments.",
+    "Use the python3 kernelspec, native environment metadata, and cleared outputs."
+  ],
+  "assets_sha256": {
+    "1.2.png": "91be7610d96d5ad2e8eb4c485376c97a75e644ecdb4f93ce66e4c4964cab05d7",
+    "5wqs.pdb": "a2703600ee3e6533828005c85a696fa2d6151d3126f3c49079bd5c88b04a4745"
+  }
+}

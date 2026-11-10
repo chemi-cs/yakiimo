@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+python scripts/validate_notebook.py --execute
+jupyter trust yakiimo_python_junior.ipynb
